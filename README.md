@@ -22,4 +22,11 @@ Separa todo en los siguientes componentes:
 - Keyboard
   - Key
 
-Entrega también un listado de responsabilidades.
+Entrega también un listado de responsabilidades:
+
+- Info (calling) /mostrar estado
+- Display (numero al que llamas /pantalla)
+- Actions (Call y hang)
+  - Action
+- Keyboard (numeros del 0 al 9 y delete)
+  - Key click
