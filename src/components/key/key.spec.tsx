@@ -6,9 +6,7 @@ describe('Given the component Key', () => {
 
     const mockKey = {
 
-        className: 'test className',
-
-        label: 'test label',
+        value: '1'
 
     };
 
@@ -20,13 +18,13 @@ describe('Given the component Key', () => {
 
             //Arrange & Act
 
-            render(<Key className={mockKey.className} label={mockKey.label} />);
+            render(<Key value={mockKey.value} />);
 
-            const labelInput = screen.getByText(/label/i);
+            const value = screen.getByText(/1/i);
 
             //Assert
 
-            expect(labelInput).toBeInTheDocument();
+            expect(value).toBeInTheDocument();
 
         });
 
