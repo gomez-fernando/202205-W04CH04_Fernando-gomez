@@ -5,10 +5,7 @@ function Hang(){
     const { calling} = useContext(PhoneContext);
     
     let classi = 'hang off';
-    // if(display.length === 9){
-    //     classi = 'hang active'
-    // // eslint-disable-next-line no-extra-boolean-cast
-    // } 
+    
      if(calling){
         classi = 'hang active'
     }
