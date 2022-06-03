@@ -1,5 +1,6 @@
 import React from 'react';
 import { PhoneContextProvider } from '../../context/phone-provider';
+import Info from '../info/info';
 import Phone from '../phone/phone';
 import './App.css';
 
@@ -11,8 +12,8 @@ function App() {
 
         <div className="App">
             <div className="container">
-                {/* <!-- El siguiente elemento se oculta añadiéndole la clase "off" --> */}
-                <span className="message">Calling...</span>
+                
+                <Info />
                 <main className="phone">
 
                     <Phone />
