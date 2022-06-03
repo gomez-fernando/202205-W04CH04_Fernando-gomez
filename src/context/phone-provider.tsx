@@ -9,15 +9,15 @@ export function PhoneContextProvider({ children }: { children: ReactElement }) {
     const [calling, setCalling] = useState(initCalling);
 
    const addNumber = (number: string) =>{
-       if(display.length <= 8){
+       if(number === 'delete'){
+        setDisplay(display.slice(0, -1))
+       } else if(display.length <= 8){
         setDisplay(display + number);
        }
+      
+        
     
    }
-
-//    const call = () => {
-//        setCalling(true);
-//    }
 
    const startCall = () => {
         setCalling(true);

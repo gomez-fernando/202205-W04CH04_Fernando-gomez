@@ -9,7 +9,8 @@ function Info(){
 
     if(display.length === 9){
         info = 'You are able to call'
-    } else if(display.length === 9 && calling){
+    }
+    if(calling){
         info = 'Calling'
     }
 
