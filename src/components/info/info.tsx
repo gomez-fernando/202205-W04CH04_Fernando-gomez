@@ -5,13 +5,12 @@ import { PhoneContext } from "../../context/phone-context";
 function Info(){
     let info = 'Dial a 9 digits number';
     const {calling, display} = useContext(PhoneContext);
-    console.log(calling);
 
     if(display.length === 9){
         info = 'You are able to call'
     }
     if(calling){
-        info = 'Calling'
+        info = 'Calling...'
     }
 
 

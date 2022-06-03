@@ -1,4 +1,3 @@
-// import { ReactElement } from 'react';
 import { useState, ReactElement } from 'react';
 import { PhoneContext } from './phone-context';
 
@@ -21,10 +20,8 @@ export function PhoneContextProvider({ children }: { children: ReactElement }) {
 
    const startCall = () => {
         setCalling(true);
-       console.log('empeiza');
        setTimeout(() => {
            setCalling(false);
-           console.log('termina');
            setDisplay('');
        }, 3000);
    }
@@ -34,7 +31,6 @@ export function PhoneContextProvider({ children }: { children: ReactElement }) {
         display,
         addNumber,
         calling,
-        // call,
         startCall,
     };
 

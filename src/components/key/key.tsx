@@ -7,16 +7,11 @@ export function Key({value}: {value: string}) {
 
     const {addNumber} = useContext(PhoneContext);
 
-    // const [display, setDisplay] = useState({
-    //     display: ''
-    // });
-    // console.log('display: ' + display);
 
 
     function handleChange(ev: SyntheticEvent) {
         const element = ev.target as HTMLFormElement;
         const value = element.value;
-        // setDisplay({ ...display, [element.value]: value });
         addNumber(value);
     }
 
